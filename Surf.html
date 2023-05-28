@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surf</title>
+  <style>
+    @keyframes my-animation {
+      100% {
+        opacity: 1;
+        transform: translateX(-1000%);
+      }
+      100% {
+        opacity: 2;
+        transform: translateX(1000);
+      }
+    }
+
+    @keyframes gradient1 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient2 {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+  @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+    body {
+      background-color: #BACDD9;
+      font-family: 'Holtwood One SC', serif;
+    }
+
+    header > p {
+      display: inline-block;
+      width: auto;
+      padding-left: 10px;
+      font-size: 14px;
+      line-height: 1em;
+      animation: my-animation 300s linear infinite;
+      color: #2F4673;
+    }
+
+    .surfmusic  {
+      text-align: center;
+    }
+
+    button {
+    margin: 20px;
+}
+
+ .surfbtn :hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.surfbtn-outline:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+  .surfbtn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.surfbtn-outline {
+    position: relative;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.surfbtn {
+    background-color: aliceblue;
+    color: #2F4673;
+}
+
+.surfbtn-outline {
+    border: 3px solid aliceblue;
+    color: #2F4673;
+}
+.surfbtn:active {
+    transform: scale(1.5);
+}
+
+.surfbtn-outline:active {
+    transform: scale(1.5);
+}
+
+.mainsurf {
+  text-align: center;
+  color: #2F4673;
+}
+
+.circlesurf {
+  position: relative;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #F2E6DF;
+  border-radius: 100%;
+  background: linear-gradient(#364C59, #364C59);
+  transform: translate3d(0, 0, 0);
+  top: 37%;
+  left: 37%;
+}
+
+.waveone {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: -65%;
+  left: -30%;
+  border-radius: 45%;
+  border: 1px solid #BACDD9;
+  background: #364C59;
+  animation: move 3s infinite linear;
+}
+
+.wavetwo {
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  top: -90%;
+  left: -30%;
+  border-radius: 45%;
+  border: 1px solid #BACDD9;
+  background: #364C59;
+  animation: move 5s infinite linear;
+}
+
+.wavethree {
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  top: -100%;
+  left: -30%;
+  border-radius: 45%;
+  background: #BACDD9;
+  border: 1px solid #364C59;
+  animation: move 7s infinite linear;
+}
+
+.wavefour {
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  top: -100%;
+  left: -30%;
+  border-radius: 46%;
+  background: linear-gradient(#728EA6 10%, transparent);
+  animation: move 7s infinite linear;
+}
+
+@keyframes move {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <header>
+    <p>surf . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . surf</p>
+    <hr>
+  </header>
+  <main>
+    <div class="surfmusic">
+    <button class="surfbtn">SURF</button>
+    <progress class="progress-bar" value="0" max="100"></progress>
+    </div>
+    <hr>
+  <div class="mainsurf">
+    <h1>SURF!</h1>
+    <p>Dance my babe Dance ma friends<br>
+      We don't have much time to enjoy<br>
+      Just sing it my babe<br>
+      Bigger than you ever did<br>
+      We don't have much time to enjoy<br>
+      Our time will be gone someday<br>
+      But I'm okay Life's like surfin anyway<br>
+      We surf like plankton<br>
+      We surf outside the waves<br>
+      We surf like a jellyfish<br>
+      We surf outside the waves side the waves<br>
+      Ma body is full of salt<br>
+      Trying to wash it away<br>
+      But you know my time is always<br>
+      So sweet with you<br>
+      Oh I'm never gonna leave<br>
+      Cause u know the life is like surfin anyway<br>
+      We surf like plankton<br>
+      We surf outside the waves<br>
+      We surf like a jellyfish<br>
+      We surf outside the waves side the waves</p>
+  </div>
+  <div class="circlesurf">
+  <div class="circle">
+    <div class="waveone"></div>
+    <div class="wavetwo"></div>
+    <div class="wavethree"></div>
+    <div class="wavefour"></div>
+    </div>
+  </div>
+  </main>
+  <script>
+    let audio;
+    let progress;
+  
+    document.querySelector(".surfbtn").addEventListener("click", function () {
+      if (audio && !audio.paused) {
+        audio.pause();
+        return;
+      }
+  
+      audio = new Audio("wave to earth - surf..mp3");
+      audio.loop = false;
+      audio.volume = 0.5;
+      audio.play();
+  
+      progress = setInterval(updateProgress, 100);
+    });
+    function updateProgress() {
+      if (audio && audio.duration) {
+        const progressBar = document.querySelector(".progress-bar");
+        progressBar.value = (audio.currentTime / audio.duration) * 100;
+      }
+    }
+  </script>
+</body>
+</html>
